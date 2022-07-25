@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: 13520351537/training
+  repository: 13520351537/cicd-hello-world
   pullPolicy: Always
   tag: latest
 imagePullSecrets: []

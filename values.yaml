@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: nginx
+  repository: rancher/hello-world
   pullPolicy: Always
   tag: latest
 imagePullSecrets: []

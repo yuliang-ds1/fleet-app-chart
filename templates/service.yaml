@@ -13,10 +13,10 @@ spec:
       protocol: TCP
       nodePort: {{ .Values.service.ports.nodePort }}
   {{- else }}
-    - port: 8080 
-      targetPort: 8080
+    - port: 32080
+      targetPort: 32080
       protocol: TCP
-      name: http
+      name: nodePort
   {{- end }}
   selector:
     {{- include "fleet-app-chart.selectorLabels" . | nindent 4 }}

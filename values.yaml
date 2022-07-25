@@ -1,8 +1,8 @@
 replicaCount: 1
 image:
-  repository: bluezd/cicd-hello-world
+  repository: nginx
   pullPolicy: Always
-  tag: c7eec4ae5e22ec2771da9918995760067634d56b
+  tag: latest
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: fleet-app

@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: 13520351537/ingcare-train-wechat
   pullPolicy: Always
-  tag: 20220725
+  tag: latest
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: fleet-app

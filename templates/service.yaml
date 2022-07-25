@@ -8,8 +8,8 @@ spec:
   type: {{ .Values.service.type }}
   ports:
   {{- if eq .Values.service.type "NodePort" }}
-    - port: 8080
-      targetPort: 8080
+    - port: 32080
+      targetPort: 32080
       protocol: TCP
       nodePort: {{ .Values.service.ports.nodePort }}
   {{- else }}

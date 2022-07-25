@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: rancher/hello-world
+  repository: 13520351537/training
   pullPolicy: Always
   tag: latest
 imagePullSecrets: []

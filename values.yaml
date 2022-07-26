@@ -5,7 +5,7 @@ image:
   tag: latest
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: fleet-app
+fullnameOverride: ingcare-train-wechat
 serviceAccount:
   create: false
   annotations: {}

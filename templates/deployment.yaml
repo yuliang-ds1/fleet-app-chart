@@ -62,8 +62,8 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-    volumes:
-      - name: mylogs
-        hostPath:
-          path: /data/logs
-          type: DirectoryOrCreate
+  volumes:
+    - name: mylogs
+      hostPath:
+        path: /data/logs
+        type: DirectoryOrCreate

@@ -27,6 +27,11 @@ spec:
       serviceAccountName: {{ include "fleet-app-chart.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      volumes:
+        - name: mylogs
+          hostPath:
+            path: /data/logs
+            type: DirectoryOrCreate
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
@@ -62,8 +67,4 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-  volumes:
-    - name: mylogs
-      hostPath:
-        path: /data/logs
-        type: DirectoryOrCreate
+

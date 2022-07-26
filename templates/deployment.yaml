@@ -34,12 +34,9 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: http-wecaht
+            - name: http
               containerPort: 32080
               protocol: TCP
-            - serviceType: NodePort
-            - ipam: dhcp
-            - listeningPort: 32080
           livenessProbe:
             httpGet:
               path: /
